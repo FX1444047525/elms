@@ -31,6 +31,7 @@ public class UserController {
 
     //管理员登录，则返回所有订单
     //可以在@RequestMapping中设置请求方式：method = RequestMethod.GET
+    //也可以用@GetMapping或者@PostMapping注解
     @RequestMapping(value = "/administrator/queryOrder")
     @ResponseBody
     public Test GetOrder(String loginAct, String loginPwd) throws LoginException {
